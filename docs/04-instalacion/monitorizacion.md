@@ -1,9 +1,19 @@
 ﻿# MonitorizaciÃ³n del Sistema con Netdata
 
-Para garantizar un mantenimiento proactivo, se ha seleccionado la herramienta **Netdata**, debido a su bajÃ­simo consumo de recursos y capacidad de monitorizaciÃ³n en tiempo real.
+Para garantizar un mantenimiento proactivo y un anÃ¡lisis de rendimiento transparente, se ha seleccionado la herramienta **Netdata**, debido a su bajÃ­simo consumo de recursos (menos de 1% de CPU) y su visualizaciÃ³n interactiva de mÃ©tricas en tiempo real.
 
-## Plan de MonitorizaciÃ³n
-1. **MÃ©tricas de CPU y Memoria RAM**: Alerta al superar el 85% de uso continuado por mÃ¡s de 5 minutos.
-2. **MÃ©tricas de Almacenamiento**: Alerta cuando el espacio libre sea inferior al 15% del volumen raÃ­z y alerta crÃ­tica al bajar del 5%.
-3. **Monitoreo de Procesos CrÃ­ticos**: Apache (`apache2`) y MariaDB (`mariadb`).
-4. **Sistema de Alertas**: ConfiguraciÃ³n de alertas locales de Netdata y envÃ­o de correos vÃ­a SMTP local de postfix.
+## Agente Netdata
+
+```bash
+# InstalaciÃ³n a travÃ©s del script oficial de bash kickstart
+wget -O /tmp/netdata-kickstart.sh https://get.netdata.cloud/kickstart.sh && sh /tmp/netdata-kickstart.sh --non-interactive
+```
+
+El agente se iniciarÃ¡ automÃ¡ticamente y expondrÃ¡ su dashboard interactivo local en el puerto `19999`.
+
+## Canales de Alerta y NotificaciÃ³n
+
+Se configura el gestor de alarmas de Netdata (`health.d`) para enviar alertas crÃ­ticas a la consola de administraciÃ³n y al correo electrÃ³nico del equipo de guardia ante incidencias de:
+- **Consumo de Memoria**: > 90% de RAM utilizada.
+- **Rendimiento de Apache**: Tiempo de respuesta medio superior a 1500 ms o incremento sÃºbito de errores 5xx.
+- **Salud de MariaDB**: CaÃ­das en la tasa de aciertos de cachÃ© (*Buffer Pool Hit Rate*) o hilos bloqueados.
