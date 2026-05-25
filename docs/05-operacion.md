@@ -1,0 +1,1 @@
+﻿<!-- Borrador inicial de 05-operacion.md -->

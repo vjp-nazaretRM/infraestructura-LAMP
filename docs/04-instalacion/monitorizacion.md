@@ -1,0 +1,1 @@
+﻿<!-- Borrador inicial de monitorizacion.md -->
