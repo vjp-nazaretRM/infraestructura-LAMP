@@ -8,7 +8,8 @@ La PYME GastroTech S.L., dedicada a soluciones de software y gestiÃ³n, requier
 3. **Mantenibilidad**: La infraestructura debe documentarse detalladamente para permitir mantenimiento Ã¡gil.
 
 ## Requisitos de Hardware y Software
-- **Servidor Web**: Apache HTTP Server sobre Ubuntu Server 22.04 LTS.
-- **Procesador de Scripts**: PHP 8.2 con extensiones para base de datos.
-- **Base de Datos**: MariaDB Server.
-- **Seguridad**: Firewall UFW y SSH securizado.
+- **Servidor FÃ­sico/Virtual**: VPS de 2 vCPUs, 4GB RAM y 80GB SSD NVMe.
+- **Servidor Web**: Apache HTTP Server sobre Ubuntu Server 22.04.4 LTS.
+- **Procesador de Scripts**: PHP 8.2 con extensiones para base de datos (`php-mysql`, `php-gd`, `php-xml`).
+- **Base de Datos**: MariaDB Enterprise Server (equivalente a MySQL).
+- **Seguridad**: Firewall UFW configurado con polÃ­tica estricta y SSH securizado.
