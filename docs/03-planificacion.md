@@ -13,11 +13,13 @@ gantt
     AnÃ¡lisis de Requisitos (SofÃ­a) :done, s2, 2026-05-25, 2d
     Estrategias Backups (Mateo)    :done, s3, 2026-05-25, 2d
     section Fase 2: ConfiguraciÃ³n
-    InstalaciÃ³n Web y BD (Mateo)  :active, s4, 2026-05-26, 3d
-    Fortalecimiento SSH/UFW (Ambos):active, s5, 2026-05-26, 2d
-    section Fase 3: OperaciÃ³n & DRP
-    GuÃ­a de Mantenimiento (SofÃ­a) :s6, 2026-05-28, 3d
-    Plan de RecuperaciÃ³n (SofÃ­a)  :s7, 2026-05-28, 2d
+    InstalaciÃ³n Web y BD (Mateo)  :done, s4, 2026-05-26, 3d
+    Fortalecimiento SSH/UFW (Ambos):done, s5, 2026-05-26, 2d
+    section Fase 3: Cambio de Alcance
+    DocumentaciÃ³n HAProxy (Ambos)  :active, s6, 2026-05-29, 2d
+    section Fase 4: OperaciÃ³n & DRP
+    GuÃ­a de Mantenimiento (SofÃ­a) :s7, 2026-05-31, 3d
+    Plan de RecuperaciÃ³n (SofÃ­a)  :s8, 2026-05-31, 2d
 ```
 
 ## Roles e Intercambio de Responsabilidades
@@ -26,5 +28,5 @@ gantt
   - *Documentalista de Plataforma*: **SofÃ­a** (AnÃ¡lisis, DiseÃ±o, Servidor Web).
   - *Documentalista de Operaciones*: **Mateo** (Backups, MonitorizaciÃ³n, CHANGELOG).
 - **SesiÃ³n 3 y 4 (Intercambio Rotativo)**:
-  - *Documentalista de Plataforma*: **Mateo** (InstalaciÃ³n de servicios y base de datos).
+  - *Documentalista de Plataforma*: **Mateo** (InstalaciÃ³n de servicios, balanceador HAProxy y base de datos).
   - *Documentalista de Operaciones*: **SofÃ­a** (GuÃ­as de mantenimiento, DRP y CHANGELOG).
