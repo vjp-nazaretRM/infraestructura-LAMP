@@ -1,6 +1,6 @@
 ﻿# Proyecto de Documentacion: Infraestructura LAMP - GastroTech S.L.
 
-Este repositorio contiene la planificacion y diseÃ±o tÃ©cnico del despliegue de la infraestructura web y de base de datos para la PYME GastroTech S.L.
+Este repositorio contiene la planificacion y diseño tecnico del despliegue de la infraestructura web y de base de datos para la PYME GastroTech S.L.
 
 ## Miembros del Equipo
 - **Nazaret Rabazo Mengual** (Rol: Documentalista de Plataforma)
