@@ -1,6 +1,6 @@
 # Reflexion y Revision Post-Proyecto: GastroTech S.L.
 
-Este documento recoge el analisis y el aprendizaje autocritico realizado por la pareja tecnica (Sofia y Mateo) en el transcurso del despliegue y documentacion de la infraestructura LAMP con HAProxy.
+Este documento recoge el analisis y el aprendizaje autocritico realizado por la pareja tecnica (Nazaret y Sergio) en el transcurso del despliegue y documentacion de la infraestructura LAMP con HAProxy.
 
 ---
 
@@ -9,14 +9,14 @@ Este documento recoge el analisis y el aprendizaje autocritico realizado por la 
 Durante el ciclo del proyecto afrontamos dos escenarios de conflicto en el desarrollo de la documentacion.
 
 ### Caso 1: Conflicto de Fusion Tradicional (Merge) en `02-diseno.md`
-- **Causa**: Sofia actualizo la tabla a la version Apache 2.4.60 en la rama `feature/actualizar-versiones`, mientras que Mateo, partiendo de una base antigua, actualizo a Apache 2.4.59 e integro una fila para Certbot en `feature/nuevas-tecnologias`.
+- **Causa**: Nazaret actualizo la tabla a la version Apache 2.4.60 en la rama `feature/actualizar-versiones`, mientras que Sergio, partiendo de una base antigua, actualizo a Apache 2.4.59 e integro una fila para Certbot en `feature/nuevas-tecnologias`.
 - **Estrategia**: Usamos `git merge`. Git bloqueo la fusion al detectar cambios incompatibles en las mismas lineas.
-- **Resolucion**: Mateo descargo la version integrada, abrio el archivo marcando los delimitadores de conflicto, conservo la version estable de Apache (2.4.60) aportada por Sofia y le anadio la fila del paquete Certbot de su propia autoria.
+- **Resolucion**: Sergio descargo la version integrada, abrio el archivo marcando los delimitadores de conflicto, conservo la version estable de Apache (2.4.60) aportada por Nazaret y le anadio la fila del paquete Certbot de su propia autoria.
 
 ### Caso 2: Conflicto con Cambio de Base (Rebase) en `ssh-firewall.md`
-- **Causa**: Mateo implemento una configuracion especifica de puertos y subred en su rama `feature/servidor-web-y-bd`, mientras que Sofia anadio parametros por defecto del firewall UFW en la misma seccion en `feature/guia-operacion`.
+- **Causa**: Sergio implemento una configuracion especifica de puertos y subred en su rama `feature/servidor-web-y-bd`, mientras que Nazaret anadio parametros por defecto del firewall UFW en la misma seccion en `feature/guia-operacion`.
 - **Estrategia**: Usamos `git rebase` para mantener el historial perfectamente lineal.
-- **Resolucion**: Al rebasar la rama de Sofia sobre `main` (donde ya se habia fusionado la rama de Mateo), surgio el conflicto. Detuvimos el proceso, editamos manualmente `ssh-firewall.md` combinando ambos mundos (las reglas detalladas de UFW con el bastionado de puerto SSH a 2222 exclusivo de la oficina) y completamos con `git rebase --continue`.
+- **Resolucion**: Al rebasar la rama de Nazaret sobre `main` (donde ya se habia fusionado la rama de Sergio), surgio el conflicto. Detuvimos el proceso, editamos manualmente `ssh-firewall.md` combinando ambos mundos (las reglas detalladas de UFW con el bastionado de puerto SSH a 2222 exclusivo de la oficina) y completamos con `git rebase --continue`.
 
 ### Comparativa: Git Merge vs. Git Rebase
 
