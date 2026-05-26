@@ -2,9 +2,9 @@
 
 Este repositorio contiene la documentación técnica profesional de nivel consultoría para el despliegue, securización, monitorización y recuperación ante desastres de la infraestructura web y de base de datos para la PYME **GastroTech S.L.** (Portal de reservas y sistema de facturación interna).
 
-Diseñado y documentado colaborativamente por:
-- **Sofía Plataforma** (Administración de Sistemas, Redes y Securización)
-- **Mateo Operaciones** (Mantenimiento, Resiliencia y Monitorización)
+- Diseñado y documentado colaborativamente por:
+- **Nazaret Rabazo MEngual** (Administración de Sistemas, Redes y Securización)
+- **Sergio Carpintero Gonzalez** (Mantenimiento, Resiliencia y Monitorización)
 
 ## 📊 Arquitectura de la Infraestructura
 
