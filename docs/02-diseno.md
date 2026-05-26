@@ -1,8 +1,8 @@
-﻿# 02. DiseÃ±o de Arquitectura
+# 02. Diseno de Arquitectura
 
-El diseÃ±o fÃ­sico y lÃ³gico de la red y servicios necesarios para satisfacer los requisitos del cliente.
+El diseno fisico y logico de la red y servicios necesarios para satisfacer los requisitos del cliente.
 
-## Esquema LÃ³gico de Red (Diagrama Mermaid)
+## Esquema Logico de Red (Diagrama Mermaid)
 
 ```mermaid
 graph TD
@@ -18,11 +18,11 @@ graph TD
 
 ## Tabla de Componentes de Software (Final Integrada)
 
-| Componente | VersiÃ³n | DescripciÃ³n / FunciÃ³n |
+| Componente | Version | Descripcion / Funcion |
 | :--- | :--- | :--- |
 | **Sistema Operativo** | Ubuntu Server 22.04 LTS | Sistema operativo base corporativo |
-| **Balanceador de Carga** | HAProxy 2.6 | Proxy inverso y terminaciÃ³n SSL |
+| **Balanceador de Carga** | HAProxy 2.6 | Proxy inverso y terminacion SSL |
 | **Servidor Web** | Apache 2.4.60 | Servidor web (corriendo en puerto interno 8080) |
 | **Base de Datos** | MariaDB 10.11 | Servidor de base de datos relacional |
-| **Certbot** | 2.9 | SSL/TLS automÃ¡tico (aÃ±adido) |
-| **Entorno EjecuciÃ³n** | PHP 8.2 | Lenguaje de scripts del portal y facturaciÃ³n |
+| **Certbot** | 2.9 | SSL/TLS automatico (anadido) |
+| **Entorno Ejecucion** | PHP 8.2 | Lenguaje de scripts del portal y facturacion |

@@ -1,25 +1,25 @@
-﻿# TablÃ³n de Tareas - GestiÃ³n del Proyecto
+# Tablon de Tareas - Gestion del Proyecto
 
-Este tablero detalla la asignaciÃ³n y el estado final de las tareas correspondientes a todas las sesiones de trabajo.
+Este tablero detalla la asignacion y el estado final de las tareas correspondientes a todas las sesiones de trabajo.
 
 ## Para Hacer (To Do)
-*(Todas las tareas programadas han sido completadas con Ã©xito)*
+*(Todas las tareas programadas han sido completadas con exito)*
 
 ## En Progreso (In Progress)
-*(Todas las tareas de integraciÃ³n finalizadas)*
+*(Todas las tareas de integracion finalizadas)*
 
 ## Terminado (Done)
-- [x] Crear estructura inicial de archivos de la consultora (SesiÃ³n 1)
-- [x] Escribir borrador de requisitos y diseÃ±o (SofÃ­a - SesiÃ³n 1)
-- [x] Escribir borrador de monitorizaciÃ³n y backups (Mateo - SesiÃ³n 1)
-- [x] Correcciones tras revisiones cruzadas (SesiÃ³n 2)
-- [x] Forzar conflicto 1 de versiones en 02-diseno.md y resolverlo vÃ­a Git Merge (SesiÃ³n 2)
-- [x] RotaciÃ³n de roles del equipo (SesiÃ³n 3)
-- [x] Documentar instalaciÃ³n de Apache + PHP y MariaDB (Mateo - SesiÃ³n 3)
-- [x] Documentar guÃ­as de operaciones diarias y planes DRP (SofÃ­a - SesiÃ³n 3)
-- [x] Provocar conflicto en reglas de cortafuegos de ssh-firewall.md y resolverlo usando Git Rebase (SesiÃ³n 3)
-- [x] CreaciÃ³n de Issue para el balanceador de carga HAProxy (SesiÃ³n 4)
-- [x] CoordinaciÃ³n en ramas paralelas para documentar el balanceador (SesiÃ³n 4)
-- [x] SincronizaciÃ³n, correcciÃ³n de enlaces internos y pulido (SesiÃ³n 4)
-- [x] RedacciÃ³n conjunta de la reflexiÃ³n del proyecto en REVISION.md (SesiÃ³n 4)
-- [x] CreaciÃ³n del Release v1.0.0 oficial en Git (SesiÃ³n 4)
+- [x] Crear estructura inicial de archivos de la consultora (Sesion 1)
+- [x] Escribir borrador de requisitos y diseno (Sofia - Sesion 1)
+- [x] Escribir borrador de monitorizacion y backups (Mateo - Sesion 1)
+- [x] Correcciones tras revisiones cruzadas (Sesion 2)
+- [x] Forzar conflicto 1 de versiones en 02-diseno.md y resolverlo via Git Merge (Sesion 2)
+- [x] Rotacion de roles del equipo (Sesion 3)
+- [x] Documentar instalacion de Apache + PHP y MariaDB (Mateo - Sesion 3)
+- [x] Documentar guias de operaciones diarias y planes DRP (Sofia - Sesion 3)
+- [x] Provocar conflicto en reglas de cortafuegos de ssh-firewall.md y resolverlo usando Git Rebase (Sesion 3)
+- [x] Creacion de Issue para el balanceador de carga HAProxy (Sesion 4)
+- [x] Coordinacion en ramas paralelas para documentar el balanceador (Sesion 4)
+- [x] Sincronizacion, correccion de enlaces internos y pulido (Sesion 4)
+- [x] Redaccion conjunta de la reflexion del proyecto en REVISION.md (Sesion 4)
+- [x] Creacion del Release v1.0.0 oficial en Git (Sesion 4)

@@ -1,8 +1,8 @@
-﻿# ConfiguraciÃ³n del Servidor de Base de Datos (MariaDB)
+# Configuracion del Servidor de Base de Datos (MariaDB)
 
-La base de datos relacional almacena la informaciÃ³n de reservas del portal corporativo y los registros de facturaciÃ³n interna de la empresa.
+La base de datos relacional almacena la informacion de reservas del portal corporativo y los registros de facturacion interna de la empresa.
 
-## InstalaciÃ³n y Bastionado
+## Instalacion y Bastionado
 
 ```bash
 # Instalar el servidor MariaDB
@@ -15,7 +15,7 @@ sudo systemctl enable --now mariadb
 sudo mariadb-secure-installation
 ```
 
-## EstructuraciÃ³n de Bases de Datos y Privilegios
+## Estructuracion de Bases de Datos y Privilegios
 
 Se crean dos bases de datos aisladas con usuarios independientes bajo el principio de menor privilegio:
 
@@ -28,7 +28,7 @@ CREATE DATABASE gastrotech_internal CHARACTER SET utf8mb4 COLLATE utf8mb4_unicod
 CREATE USER 'reservas_user'@'localhost' IDENTIFIED BY 'W3bReservas_2026_SecureP@ss';
 GRANT SELECT, INSERT, UPDATE, DELETE ON gastrotech_web.* TO 'reservas_user'@'localhost';
 
--- Usuario para la intranet de facturaciÃ³n interna
+-- Usuario para la intranet de facturacion interna
 CREATE USER 'billing_user'@'localhost' IDENTIFIED BY 'FacturacionInternal_2026_SecPass';
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON gastrotech_internal.* TO 'billing_user'@'localhost';
 

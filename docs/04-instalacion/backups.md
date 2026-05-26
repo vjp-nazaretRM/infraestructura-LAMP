@@ -1,10 +1,10 @@
-﻿# Estrategia de Copias de Seguridad (Backups)
+# Estrategia de Copias de Seguridad (Backups)
 
-La resiliencia operativa y protecciÃ³n de la informaciÃ³n de reservas y facturaciÃ³n de GastroTech S.L. se basa en un esquema hÃ­brido de backups locales diarios y copias incrementales externas con retenciÃ³n rotativa.
+La resiliencia operativa y proteccion de la informacion de reservas y facturacion de GastroTech S.L. se basa en un esquema hibrido de backups locales diarios y copias incrementales externas con retencion rotativa.
 
 ## Script de Backup Automatizado (`/opt/scripts/backup_pyme.sh`)
 
-Este script realiza la copia consistente de las bases de datos mediante `mariadb-dump` con bloqueos seguros de tablas y sincroniza con `rsync` el repositorio de cÃ³digo.
+Este script realiza la copia consistente de las bases de datos mediante `mariadb-dump` con bloqueos seguros de tablas y sincroniza con `rsync` el repositorio de codigo.
 
 ```bash
 #!/bin/bash
@@ -29,13 +29,13 @@ mariadb-dump -u root --single-transaction --databases gastrotech_internal > $DES
 # 2. Sincronizar directorio web mediante rsync e SSH
 rsync -avz --delete /var/www/html/ $USUARIO_BACKUP@$SERVIDOR_BACKUP:/backups/web/site/ 2>> $LOG_FILE
 
-# 3. RotaciÃ³n de SQLs locales (conservar Ãºltimos 7 dÃ­as)
+# 3. Rotacion de SQLs locales (conservar ultimos 7 dias)
 find $DESTINO_LOCAL -type f -name "*.sql" -mtime +7 -delete
 
 echo "=== Fin de Backup: $(date +%Y-%m-%d_%H-%M) ===" >> $LOG_FILE
 ```
 
-## PlanificaciÃ³n con Cron Daemon
+## Planificacion con Cron Daemon
 
 El script se planifica para ejecutarse de manera desatendida todas las noches a las 02:00 AM.
 En `/etc/cron.d/backups_pyme`:

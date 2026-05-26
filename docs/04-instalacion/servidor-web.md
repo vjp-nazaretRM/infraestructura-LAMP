@@ -1,8 +1,8 @@
-﻿# Servidor Web Apache y Balanceador HAProxy
+# Servidor Web Apache y Balanceador HAProxy
 
-Este documento detalla la instalaciÃ³n del servidor HTTP Apache, el entorno PHP y la integraciÃ³n de un balanceador de carga **HAProxy** como proxy inverso y terminador de carga para mayor disponibilidad y seguridad.
+Este documento detalla la instalacion del servidor HTTP Apache, el entorno PHP y la integracion de un balanceador de carga **HAProxy** como proxy inverso y terminador de carga para mayor disponibilidad y seguridad.
 
-## InstalaciÃ³n del Software
+## Instalacion del Software
 
 ```bash
 # Instalar Apache y PHP
@@ -13,9 +13,9 @@ sudo apt install -y apache2 php8.2 libapache2-mod-php8.2 php8.2-mysql
 sudo apt install -y haproxy
 ```
 
-## ConfiguraciÃ³n de HAProxy (/etc/haproxy/haproxy.cfg)
+## Configuracion de HAProxy (/etc/haproxy/haproxy.cfg)
 
-Se configura HAProxy en el puerto pÃºblico 80 para redirigir el trÃ¡fico balanceado hacia el servidor web Apache local (que ahora escucha internamente en el puerto 8080):
+Se configura HAProxy en el puerto publico 80 para redirigir el trafico balanceado hacia el servidor web Apache local (que ahora escucha internamente en el puerto 8080):
 
 ```text
 global
@@ -44,7 +44,7 @@ backend apache_servers
     server apache_local 127.0.0.1:8080 check
 ```
 
-## ReconfiguraciÃ³n del Puerto en Apache
+## Reconfiguracion del Puerto en Apache
 
 En `/etc/apache2/ports.conf` modificamos el puerto de escucha a `8080`:
 
