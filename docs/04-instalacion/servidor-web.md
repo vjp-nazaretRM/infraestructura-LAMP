@@ -1,21 +1,21 @@
 ﻿# Servidor Web Apache + PHP 8.2
 
-Este documento detalla la instalaciÃ³n del servidor HTTP Apache y el entorno de ejecuciÃ³n PHP para el portal GastroTech S.L.
+Este documento detalla la instalacion del servidor HTTP Apache y el entorno de ejecucion PHP para el portal GastroTech S.L.
 
-## InstalaciÃ³n del Software
+## Instalacion del Software
 
 ```bash
-# Actualizar el Ã­ndice de paquetes e instalar Apache2
+# Actualizar el indice de paquetes e instalar Apache2
 sudo apt update
 sudo apt install -y apache2
 
-# Instalar PHP 8.2 y los mÃ³dulos de integraciÃ³n requeridos
+# Instalar PHP 8.2 y los modulos de integracion requeridos
 sudo apt install -y php8.2 libapache2-mod-php8.2 php8.2-mysql php8.2-gd php8.2-xml php8.2-curl
 ```
 
-## ConfiguraciÃ³n del Sitio Virtual (VirtualHost)
+## Configuracion del Sitio Virtual (VirtualHost)
 
-El sitio corporativo se servirÃ¡ desde `/var/www/html/gastrotech_web`. Creamos el fichero `/etc/apache2/sites-available/gastrotech.conf`:
+El sitio corporativo se servira desde `/var/www/html/gastrotech_web`. Creamos el fichero `/etc/apache2/sites-available/gastrotech.conf`:
 
 ```xml
 <VirtualHost *:80>
@@ -35,7 +35,7 @@ El sitio corporativo se servirÃ¡ desde `/var/www/html/gastrotech_web`. Creamos
 ```
 
 ```bash
-# Habilitar el sitio y el mÃ³dulo rewrite
+# Habilitar el sitio y el modulo rewrite
 sudo a2ensite gastrotech.conf
 sudo a2enmod rewrite
 sudo systemctl restart apache2

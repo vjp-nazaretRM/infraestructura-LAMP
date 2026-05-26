@@ -1,14 +1,14 @@
-﻿# TablÃ³n de Tareas - GestiÃ³n del Proyecto
+﻿# Tablon de Tareas - Gestion del Proyecto
 
 ## Para Hacer (To Do)
-- [ ] Documentar instalaciÃ³n de servidor Apache + PHP
+- [ ] Documentar instalacion de servidor Apache + PHP
 - [ ] Documentar despliegue de Base de Datos MySQL
-- [ ] Configurar parÃ¡metros de SSH y Firewall
-- [ ] DiseÃ±ar Plan de RecuperaciÃ³n ante Desastres (DRP)
+- [ ] Configurar parametros de SSH y Firewall
+- [ ] Disenar Plan de Recuperacion ante Desastres (DRP)
 
 ## En Progreso (In Progress)
-- [/] AnÃ¡lisis inicial de requisitos y diseÃ±o de red
-- [/] PolÃ­tica de monitorizaciÃ³n y copias de seguridad
+- [/] Analisis inicial de requisitos y diseno de red
+- [/] Politica de monitorizacion y copias de seguridad
 
 ## Terminado (Done)
 - [x] Crear estructura inicial del repositorio y README.md
